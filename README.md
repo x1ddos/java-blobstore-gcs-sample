@@ -29,12 +29,14 @@ Clone the repo and optionally import it into your favorite IDE.
 
 Open `pom.xml` and update the Project ID in:
 
-  ```<appengine.app.id>my-app-id-goes-here</appengine.app.id>```
+  ```
+    <appengine.app.id>my-app-id-goes-here</appengine.app.id>
+  ```
 
 Last thing is to set correct bucket name in [UploadServlet][1]:
 
   ```
-  public static final String GCS_BUCKET_NAME = "my-bucket-name-goes-here";
+    public static final String GCS_BUCKET_NAME = "my-bucket-name-goes-here";
   ```
 
 To upload the app execute `mvn appengine:update`
